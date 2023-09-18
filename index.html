@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Przelicznik walut</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -18,13 +20,13 @@
 
   <div class="amount-container">
     <label for="amount">Wprowadź kwotę:</label>
-    <input type="text" placeholder="Kwota" id="amount" color: #333>
+    <input type="text" placeholder="Kwota" id="amount">
   </div class="loader-container">
-    <button onclick="convertCurrency()">Przelicz</button>
-    <div id="loader"></div>
-    <div id="result"></div>
+    <button id="convertButton">Przelicz</button>
+    <div class="loader"></div>
+    <div class="result"></div>
   </div>
   </div>
   
-  <script src="API.js"></script>
+  <script src="index.js"></script>
 </body>
