@@ -1,6 +1,6 @@
 const currencySelect = document.getElementById("currency");
 const amountInput = document.getElementById("amount");
-const currencyButton = document.getElementById('currencyButton');
+const currencyForm = document.getElementById('currencyForm');
 const loaderDiv = document.querySelector('.loader');
 const resultDiv = document.querySelector('.result');
 
@@ -8,9 +8,8 @@ const resultDiv = document.querySelector('.result');
 function convertCurrency(event) {
     event.preventDefault();
 
-    const formData = new FormData(currencyForm);
-    const selectedCurrency = formData.get("currency");
-    const amount = formData.get("amount");
+    const selectedCurrency = currencySelect.value;
+    const amount = amountInput.value;
 
     
 
